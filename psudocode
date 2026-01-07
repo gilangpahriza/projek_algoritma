@@ -1,0 +1,33 @@
+PSEUDOCODE PENILAIIN MAHASISWA
+START
+SET jumlah = 0
+
+DO
+    TAMPILKAN MENU
+    INPUT pilihan
+
+    IF pilihan == 1
+        INPUT jumlah_mahasiswa
+        FOR setiap mahasiswa
+            INPUT nim,nama, tugas, uts, uas
+            HITUNG nilai_akhir
+            TENTUKAN grade
+            TENTUKAN status
+            SIMPAN ke array
+        END FOR
+
+    ELSE IF pilihan == 2
+        JIKA data kosong
+            TAMPILKAN "Belum ada data"
+        ELSE
+            TAMPILKAN data dalam tabel
+        ENDIF
+
+    ELSE IF pilihan == 0
+        KELUAR PROGRAM
+    ELSE
+        TAMPILKAN "Pilihan tidak valid"
+    ENDIF
+WHILE pilihan != 0
+
+END
