@@ -1,0 +1,59 @@
+PSUDOCODE VOTING
+
+Mulai
+
+Deklarasi:
+  array nim[100]
+  integer jumlahMahasiswa, pilihan
+  integer sangatBaik = 0
+  integer baik = 0
+  integer cukup = 0
+  integer kurang = 0
+
+Tampilkan "Masukkan jumlah mahasiswa"
+Input jumlahMahasiswa
+
+Untuk i = 0 sampai jumlahMahasiswa - 1
+  sudahVote = false
+
+  Tampilkan "Masukkan NIM"
+  Input inputNIM
+
+  Untuk j = 0 sampai i - 1
+    Jika nim[j] == inputNIM maka
+      sudahVote = true
+    Endif
+  Endfor
+
+  Jika sudahVote == true maka
+    Tampilkan "NIM sudah melakukan voting"
+    i = i - 1
+    Lanjut ke perulangan berikutnya
+  Endif
+
+  Simpan inputNIM ke nim[i]
+
+  Tampilkan menu penilaian
+  Input pilihan
+
+  Jika pilihan == 1
+    sangatBaik++
+  Else jika pilihan == 2
+    baik++
+  Else jika pilihan == 3
+    cukup++
+  Else jika pilihan == 4
+    kurang++
+  Else
+    Tampilkan "Pilihan tidak valid"
+    i = i - 1
+  Endif
+Endfor
+
+Tampilkan hasil voting:
+  Sangat Baik
+  Baik
+  Cukup
+  Kurang
+
+Selesai
